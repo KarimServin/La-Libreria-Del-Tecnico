@@ -1,0 +1,43 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+
+.containerDiv {
+    display: flex;
+    flex-direction: row;
+    background-color: black;
+    padding: 1em;
+}
+
+.tituloDiv {
+    display: inline;
+    color: white;
+    font-family: 'Times New Roman', Times, serif;
+    padding-right: 1em;
+    
+}
+
+
+a {
+   display: inline;
+   padding-left: 1em;
+   text-decoration: none;
+   color: white;
+
+}
+
+@media screen and (max-width:499px) {
+
+    .containerDiv {
+
+        justify-content: center;
+
+    }
+   
+
+    
+}
