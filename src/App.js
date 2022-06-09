@@ -1,8 +1,13 @@
+import React from 'react';
+import {NavbarFunction} from './components/nabvar/navbar.js'
+import { ContainerDeProductos } from './components/ItemListContainer/ItemListContainer.js';
 import './components/nabvar/navbar.css'
-import {NavbarFunction} from './components/nabvar/navbar'
 
 function App() {
-  return <NavbarFunction />
+  return <> <NavbarFunction />
+  <ContainerDeProductos/>
+  </>
 }
 
-export default App
+
+export default App;
