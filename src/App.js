@@ -4,8 +4,9 @@ import { ContainerDeProductos } from './components/ItemListContainer/ItemListCon
 import './components/nabvar/navbar.css'
 
 function App() {
-  return <> <NavbarFunction />
-  <ContainerDeProductos/>
+  return <> 
+  <NavbarFunction />
+  <ContainerDeProductos saludo="hola, esto es un contenedor de productos"/>
   </>
 }
 

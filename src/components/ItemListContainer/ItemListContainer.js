@@ -1,7 +1,11 @@
 import React from 'react';
 
-export const ContainerDeProductos = () => {
+export const ContainerDeProductos = props => {
 
-    return <h1>Un contenedor de productos</h1>
+const {saludo} = props; //SE TIENE QUE RESPETAR EL NOMBRE DE LOS ATRIBUTOS QUE RECIBE
+
+console.log(props);
+
+    return <h1> {saludo}</h1>
 
 }
