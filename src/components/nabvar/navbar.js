@@ -1,5 +1,7 @@
 import React from 'react';
 import { IconoCarrito } from '../cartWidget/CartWidget';
+import '../nabvar/navbar.css';
+
 export const NavbarFunction = () => {
    
    return <div className='containerDiv'>

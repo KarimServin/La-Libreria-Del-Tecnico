@@ -1,12 +1,9 @@
 import React from 'react';
-import {NavbarFunction} from './components/nabvar/navbar.js'
-import { ContainerDeProductos } from './components/ItemListContainer/ItemListContainer.js';
-import './components/nabvar/navbar.css'
+import {AllContainer} from './components/BigContainer/BigContainer.js'
 
 function App() {
   return <> 
-  <NavbarFunction />
-  <ContainerDeProductos saludo="hola, esto es un contenedor de productos"/>
+  <AllContainer />  
   </>
 }
 

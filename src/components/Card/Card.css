@@ -1,0 +1,20 @@
+.card {
+
+    display: grid;
+    height: 300px;
+    width: 300px;
+    background-color: blue;
+    color: white;
+   font-family: 'Courier New', Courier, monospace;
+   justify-content: center;
+}
+
+.card button {
+   
+    height: fit-content;
+   
+}
+
+
+
+
