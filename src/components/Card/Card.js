@@ -1,18 +1,20 @@
-import React from 'react';
-import {useState} from 'react';
+import React, {useState} from 'react';
 import '../Card/Card.css'
 import '../ItemListContainer/ItemListContainer'
 
-const [cantidad, setCantidad] = React.useState(1)
+
 
 export const MostrarCard = props => {
+    const [Stock,SetStock] = useState(props.stock);
+    const [Quantity,SetQuantity]=useState(0);
 
 return <article className='card'>
 
 <h3>Producto1</h3>
-<button onClick={() => {setCantidad(cantidad + 1)}}>Comprar</button>
-<p>stock: {cantidad} </p>
-<p>unidades que lleva: </p>
+<button onClick={() => Stock>0?(SetStock(Stock-1), SetQuantity(Quantity+1)):alert('NO HAY STOCK')}>Comprar</button>
+<button onClick={() => Quantity>0? (SetStock(Stock+1), SetQuantity(Quantity-1)): alert('NO HAY EXISTENCIA DEL PRODUCTO EN EL CARRITO')}>Sacar del carrito</button>
+<p>stock: {Stock}</p>
+<p>unidades que lleva: {Quantity}</p>
 </article>
 
 
