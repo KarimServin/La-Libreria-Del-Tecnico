@@ -1,0 +1,10 @@
+section {
+
+display: grid;
+grid-template-columns: repeat(5,1fr);
+font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+grid-gap: 1em;
+margin: 2em;
+
+
+}

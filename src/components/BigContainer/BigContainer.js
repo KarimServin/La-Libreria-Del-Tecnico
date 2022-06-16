@@ -9,7 +9,7 @@ import { ContainerDeProductos } from '../ItemListContainer/ItemListContainer'
 export const  AllContainer   = () => {
 return <>
   <NavbarFunction />
-  <ContainerDeProductos saludo="hola, esto es un contenedor de productos"/>
+  <ContainerDeProductos/>
   </>
 }
 

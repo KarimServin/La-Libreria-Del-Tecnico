@@ -6,7 +6,7 @@ export const NavbarFunction = () => {
    
    return <div className='containerDiv'>
 
-       <div className='tituloDiv'>La Libreria del Tecnico</div>
+       <div className='tituloDiv'>La Libreria del Técnico</div>
     
    <nav>   
          <a href="#">Inicio</a>
@@ -18,3 +18,4 @@ export const NavbarFunction = () => {
           </div>
 
 }
+
