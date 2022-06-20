@@ -1,8 +1,9 @@
-.elcarrito {
-
+.TheCart {
+    padding: 0.6em;
     height: 16px;
     width: 16px;
-    background-color: rgb(147, 3, 3) !important;
-    
+    background-color: rgb(170, 2, 2);
+    color: white;
+    border-radius: 0.3em;
+    }
 
-}

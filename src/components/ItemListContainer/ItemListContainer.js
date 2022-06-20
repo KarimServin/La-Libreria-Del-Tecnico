@@ -1,21 +1,23 @@
-import React from 'react';
-import { MostrarCard } from '../Card/Card';
+import React, {useEffect, useState} from 'react';
+import { MostrarItem } from '../Item/Item';
 import './ItemListContainer.css'
-
-const productos = [{stock:5, titulo: 'Calculo Stewart'},
-{stock:7, titulo: 'Calculo Larson'},
-{stock:3, titulo: 'Calculo Apostol'},
-{stock:8, titulo: 'Calculo Sadosky'},
-{stock:8, titulo: 'Matematica Discreta'},
-{stock:8, titulo: 'Métodos Numéricos'}]
+import products from '../../utils/products';
+import customFetch from '../../utils/customFetch';
+import ItemList from '../ItemList/ItemList'
 
 export const ContainerDeProductos = () => {
 
-    return <section>
-    {productos.map((producto) => (<MostrarCard stock={producto.stock} titulo={producto.titulo}/>)
-    )}
-    </section>
 
+    const [items,setItems] = useState([]);
+
+    useEffect( () => {
+
+        customFetch(3000,products)
+        .then (result => setItems(result))}, [])
+
+    return <section className='ContainerProductos'>
+        <ItemList products={items}/>
+    </section>
 
 }
 

@@ -1,5 +1,5 @@
 import React, {useState} from 'react';
-import '../Card/Card';
+import '../Item/Item';
 
 
 export const StockCounter = props => {

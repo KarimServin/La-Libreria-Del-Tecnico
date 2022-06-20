@@ -1,10 +1,12 @@
 import React from 'react';
 import '../cartWidget/CartWidget.css'
-import '../Card/Card'
+import '../Item/Item'
+import { Cart4 } from 'react-bootstrap-icons';
+
 export const IconoCarrito = () => {
    
-   return <img src='https://cdn-icons-png.flaticon.com/512/3144/3144484.png' alt='carrito' className='elcarrito'>
-      </img>
+   return <fragment className='TheCart'>
+   <Cart4/> Carrito
+   </fragment>
       
-
 }

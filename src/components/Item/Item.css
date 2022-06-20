@@ -1,0 +1,25 @@
+
+
+.card-body {
+
+    background-color: rgb(255, 222, 222);
+    font-family: 'Times New Roman', Times, serif !important;
+    
+}
+
+
+.card-img-top {
+
+    width: 286px !important;
+    height: 368px !important;
+
+}
+
+Button {
+
+    
+    background-color: black !important;
+    border-color: black !important;
+
+}
+
