@@ -15,7 +15,8 @@ const ItemDetailContainer = () => {
           .then (product => setItems(product.unidad))
           }
 
-          customFetch(2000,getItems())
+          getItems();
+          customFetch(2000,items)
 
     }, [])
 
