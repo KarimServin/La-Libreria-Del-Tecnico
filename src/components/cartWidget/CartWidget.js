@@ -5,8 +5,8 @@ import { Cart4 } from 'react-bootstrap-icons';
 
 export const IconoCarrito = () => {
    
-   return <fragment className='TheCart'>
+   return <span className='TheCart'>
    <Cart4/> Carrito
-   </fragment>
+   </span>
       
 }

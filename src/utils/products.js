@@ -4,6 +4,7 @@ const products = [
 
 
     {
+     
       id: 1,
       title: 'Calculo en varias variables',
       description: 'Stewart 8va edicion',
@@ -12,6 +13,7 @@ const products = [
 
     },
     {
+       
         id:  2,
         title: 'Ingenieria del Software',
         description: 'Sommerville 9na edicion',
@@ -20,6 +22,7 @@ const products = [
   
       },
       {
+       
         id:  3,
         title: 'Compiladores',
         description: 'Aho 2da edicion',
@@ -28,7 +31,8 @@ const products = [
   
       }, 
       {
-        id:  3,
+        
+        id:  4,
         title: 'Senales y Sistemas',
         description: 'Oppenheim 2da Edicion',
         price: 2,

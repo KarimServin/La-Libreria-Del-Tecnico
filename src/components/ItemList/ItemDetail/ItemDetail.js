@@ -1,8 +1,8 @@
 import React from "react";
-import CardItem from "../Item/Item";
+import CardItem from "../../Item/Item";
 
 
-const ItemList = ({products}) => {
+const ItemDetail = ({products}) => {
 
       return  (products.map( (p) =>
              <CardItem key={p.id} 
@@ -15,4 +15,4 @@ const ItemList = ({products}) => {
 
 }
 
-export default ItemList;
+export default ItemDetail;
