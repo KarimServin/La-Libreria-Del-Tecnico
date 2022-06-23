@@ -2,11 +2,11 @@ import React from "react";
 import CardItem from "../../Item/Item";
 
 
-const ItemDetail = ({products}) => {
+const ItemDetail = ({productos}) => {
 
-      return  (products.map( (p) =>
+      return  (productos.map( (p) =>
              <CardItem key={p.id} 
-             title={p.title} 
+             title={p.name} 
              description = {p.description} 
              pictureUrl={p.pictureUrl}/>
         ))
