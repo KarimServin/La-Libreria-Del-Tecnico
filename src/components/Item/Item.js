@@ -1,14 +1,15 @@
 import React from 'react';
 import { Card,Button } from 'react-bootstrap';
 import './Item.css'
-import '../ItemListContainer/ItemListContainer'
+import {Link} from 'react-router-dom'
 
 
 
-const CardItem = (props) => {
+const Item = (props) => {
 
     const { id, title, description, price, pictureUrl } = props;
 
+    
     return <Card  style={{ width: '18rem' }}> 
         <Card.Img variant="top" src={pictureUrl} />
         <Card.Body>
@@ -16,10 +17,10 @@ const CardItem = (props) => {
             <Card.Text>
                 {description}
             </Card.Text>
-            <Button variant="primary">Ver más</Button>
+            <Link to={`/item/${id}`}>Ver más</Link>
         </Card.Body>
     </Card>;
 
 }
 
-export default CardItem;
+export default Item;

@@ -1,22 +1,50 @@
 import React, {useEffect, useState} from 'react';
 import './ItemListContainer.css'
-import products from '../../utils/products';
-import customFetch from '../../utils/customFetch';
-import ItemList from '../ItemList/ItemList'
+import Item from '../Item/Item'
+import axios from 'axios'
+import {useParams} from 'react-router-dom'
 
-export const ContainerDeProductos = () => {
+const ItemListContainer = () => {
 
+    const {id} = useParams();
 
-    const [items,setItems] = useState([]);
+    let [ProductList,setProducts] = useState([]);
 
     useEffect( () => {
+        const getItems = () => {
+            axios
+            .get('https://62b26723c7e53744afcbd736.mockapi.io/products')
+            .then (({ data }) => setProducts(data))
+            }
+            setTimeout(() => {getItems()},2000)      
+    }, [])
 
-        customFetch(1000,products)
-        .then (result => setItems(result))}, [])
 
-    return <section className='ContainerProductos'>
-        <ItemList products={items}/>
+
+
+
+        return <section className='ContainerProductos'>
+        <ItemListMap products={ProductList}/>
     </section>
+    }
 
-}
+    
+    const ItemListMap = ({products}) => {
+
+            return  (products.map( p =>
+        
+                   <Item key={p.id}
+                   id={p.id} 
+                   title={p.title} 
+                   description = {p.description} 
+                   pictureUrl={p.pictureUrl}/>
+              ) )
+      
+    }
+
+export default ItemListContainer;
+
+
+
+
 

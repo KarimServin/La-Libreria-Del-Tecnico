@@ -1,10 +1,10 @@
 import React from 'react';
-import {AllContainer} from './components/BigContainer/BigContainer.js'
+import AppRouting from './components/AppRouting/AppRouting'
+
 
 function App() {
-  return <> 
-  <AllContainer />  
-  </>
+  return <AppRouting/>
+  
 }
 
 

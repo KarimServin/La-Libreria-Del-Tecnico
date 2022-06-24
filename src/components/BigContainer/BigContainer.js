@@ -1,7 +1,6 @@
 import React from 'react'
 import {NavbarFunction} from '../nabvar/navbar'
-import { ContainerDeProductos } from '../ItemListContainer/ItemListContainer'
-import ItemDetailContainer from '../ItemDetailContainer/ItemDetailContainer'
+import ItemListContainer from '../ItemListContainer/ItemListContainer'
 
 //ESTE ES UN SUPERCONTAINER QUE INCLUYE 
 //TODOS LOS COMPONENTES PARA MEJORAR LEGIBILIDAD DE APP.JS
@@ -9,7 +8,7 @@ import ItemDetailContainer from '../ItemDetailContainer/ItemDetailContainer'
 export const  AllContainer   = () => {
 return <>
   <NavbarFunction />
-  <ItemDetailContainer/>
+  <ItemListContainer/>
   </>
 }
 

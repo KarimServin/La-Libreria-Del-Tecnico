@@ -1,8 +1,9 @@
 import React from 'react';
-import { IconoCarrito } from '../cartWidget/CartWidget';
-import { Navbar,Container,Nav,Form,Button,FormControl } from 'react-bootstrap';
+import { IconoCarrito } from '../CartWidget/CartWidget';
+import { Navbar,Container,Nav,Form,Button,FormControl,NavDropdown } from 'react-bootstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './navbar.css'
+import Categoria from '../Category/Category';
 
 
 
@@ -18,7 +19,7 @@ export const NavbarFunction = () => {
        <Nav className="me-auto my-2 my-lg-0">
          <Nav.Link href="#action1">Home</Nav.Link>
          <Nav.Link href="#action2">Contacto</Nav.Link>
-          
+         <Categoria/>
        </Nav>
        <Form className="d-flex">
          <FormControl
