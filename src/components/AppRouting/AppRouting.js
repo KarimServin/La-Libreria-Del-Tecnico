@@ -11,7 +11,6 @@ const AppRouting = () => {
     <Routes>
 
       <Route path='/' element={<AllContainer/>}/>
-      <Route path='/category/:idCategory' element={<ItemListContainer/>}/>
       <Route path='/item/:id' element={<ItemDetailContainer/>}/>
 
     </Routes>

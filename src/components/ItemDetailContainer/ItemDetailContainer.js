@@ -5,32 +5,32 @@ import ItemDetail from "../ItemDetail/ItemDetail";
 
 const ItemDetailContainer = () => {
 
-    const {id} = useParams()
-    
-    const [itemQ,setItems] = useState([]);
-        
-
-    useEffect( () => {
-        const getItems = () => {
-            axios
-            .get('https://62b26723c7e53744afcbd736.mockapi.io/products')
-            .then (({ data }) => setItems(data))
-            }
-            getItems()    
-        }, [])     
-
-        
-    }
-
-    
 
 
-
-   
-
-export default ItemDetailContainer;
+    const {id} = useParams(); //LA ID DE ROUTING
 
 
+    const [productList,setProductList] = useState([]);
 
 
+    useEffect ( () => {
 
+        const getProducts = () => {
+        axios
+        .get('https://62b26723c7e53744afcbd736.mockapi.io/products')
+        .then((response) => setProductList(response.data))
+
+        }
+
+        getProducts();
+
+    },[setProductList])
+
+
+    const newItem = productList.find(p => p.id == id);
+
+return <ItemDetail producto={newItem} />
+
+}
+
+export default ItemDetailContainer

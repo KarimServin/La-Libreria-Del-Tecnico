@@ -1,26 +1,17 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 
+const ItemDetail = producto => {
 
-const ItemDetail = ({producto}) => {
+    
 
+    console.log(producto);
 
-
-
-
+    
     return <article>
-        <img src={producto.pictureUrl}></img>
         <h5>$ {producto.price}</h5>
-        <p>{producto.description}</p>
-
-
     </article>
-
-
-
 
 }
  
-
-
 export default ItemDetail;
 

@@ -2,11 +2,11 @@ import React, {useEffect, useState} from 'react';
 import './ItemListContainer.css'
 import Item from '../Item/Item'
 import axios from 'axios'
-import {useParams} from 'react-router-dom'
+
 
 const ItemListContainer = () => {
 
-    const {id} = useParams();
+    
 
     let [ProductList,setProducts] = useState([]);
 
@@ -16,21 +16,21 @@ const ItemListContainer = () => {
             .get('https://62b26723c7e53744afcbd736.mockapi.io/products')
             .then (({ data }) => setProducts(data))
             }
-            setTimeout(() => {getItems()},2000)      
+            
+            getItems()
+            
     }, [])
 
-
-
-
-
+    console.log(ProductList)
+    
         return <section className='ContainerProductos'>
         <ItemListMap products={ProductList}/>
     </section>
-    }
+}
 
     
     const ItemListMap = ({products}) => {
-
+         
             return  (products.map( p =>
         
                    <Item key={p.id}
