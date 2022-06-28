@@ -2,11 +2,12 @@ import React, {useEffect, useState} from 'react';
 import './ItemListContainer.css'
 import Item from '../Item/Item'
 import axios from 'axios'
-
+import { useParams } from 'react-router-dom';
 
 const ItemListContainer = () => {
 
     
+    const {categoryid} = useParams();
 
     let [ProductList,setProducts] = useState([]);
 
@@ -21,10 +22,17 @@ const ItemListContainer = () => {
             
     }, [])
 
-    console.log(ProductList)
+
+    let newProductList;
+ 
+
+    categoryid==undefined? newProductList=ProductList:(
+    categoryid=='todos'? newProductList=ProductList: newProductList = ProductList.filter( p => p.categoria==categoryid))
     
+
         return <section className='ContainerProductos'>
-        <ItemListMap products={ProductList}/>
+        <ItemListMap products={newProductList}/>
+
     </section>
 }
 

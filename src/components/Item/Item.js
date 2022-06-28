@@ -17,7 +17,7 @@ const Item = (props) => {
             <Card.Text>
                 {description}
             </Card.Text>
-            <Link to={`/item/${id}`}>Ver más</Link>
+         <Button>  <Link to={`/item/${id}`} style={{ textDecoration: 'none', color: 'white' }}>Ver más</Link></Button> 
         </Card.Body>
     </Card>;
 

@@ -27,10 +27,30 @@ const ItemDetailContainer = () => {
     },[setProductList])
 
 
-    const newItem = productList.find(p => p.id == id);
+    const newItem = productList.filter( p => p.id == id);
 
-return <ItemDetail producto={newItem} />
+return <SendDetails producto={newItem} />
 
 }
 
-export default ItemDetailContainer
+
+const SendDetails = ({producto}) => {
+
+    
+    return (producto.map( p => 
+
+        <ItemDetail key={p.id} id={p.id} title={p.title} price={p.price} pictureUrl={p.pictureUrl} description={p.description}/>
+
+  ))
+
+
+
+    }
+    
+
+    
+
+
+
+
+export default ItemDetailContainer;

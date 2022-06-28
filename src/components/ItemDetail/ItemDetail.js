@@ -1,15 +1,20 @@
-import React, { useEffect, useState } from "react";
 
-const ItemDetail = producto => {
+import './ItemDetail.css'
+const ItemDetail = props => {
 
+
+    const{title,id,price,pictureUrl,description,key} = props;
     
 
-    console.log(producto);
+       
 
-    
-    return <article>
-        <h5>$ {producto.price}</h5>
-    </article>
+    return <article className="ItemDetail">
+        
+        <img src={pictureUrl}></img>
+        <h2>{title}</h2>
+        <p>{description}</p>
+        <h5>  ${price} </h5>    
+        </article>
 
 }
  

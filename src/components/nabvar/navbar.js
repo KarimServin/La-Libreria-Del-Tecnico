@@ -1,10 +1,10 @@
 import React from 'react';
 import { IconoCarrito } from '../CartWidget/CartWidget';
-import { Navbar,Container,Nav,Form,Button,FormControl,NavDropdown } from 'react-bootstrap';
+import { Navbar,Container,Nav,Form,Button,FormControl } from 'react-bootstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './navbar.css'
 import Categoria from '../Category/Category';
-
+import { Link } from 'react-router-dom';
 
 
 export const NavbarFunction = () => {
@@ -13,11 +13,11 @@ export const NavbarFunction = () => {
    return <header>
    <Navbar expand="lg">
    <Container fluid>
-     <Navbar.Brand href="#">La Librería del Técnico</Navbar.Brand> 
+     <Navbar.Brand href="#"><Link to='/' style={{ textDecoration: 'none', color: 'black' }}>La Librería del Técnico</Link> </Navbar.Brand> 
      <Navbar.Toggle />
      <Navbar.Collapse  id="navbarScroll">
        <Nav className="me-auto my-2 my-lg-0">
-         <Nav.Link href="#action1">Home</Nav.Link>
+         <Nav.Link><Link to='/' style={{ textDecoration: 'none', color: 'black' }}>Home</Link></Nav.Link>
          <Nav.Link href="#action2">Contacto</Nav.Link>
          <Categoria/>
        </Nav>

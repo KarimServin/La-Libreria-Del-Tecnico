@@ -1,0 +1,54 @@
+.ItemDetail {
+
+
+    font-family: 'Times New Roman', Times, serif;
+    
+
+}
+
+
+@media screen and (max-width:900px) {
+
+
+
+    .ItemDetail {
+
+        margin: 50px;
+
+        justify-items: center;
+        justify-content: center;
+        text-align: center;
+        max-height: 100%;
+
+    }
+
+    
+}
+
+
+.ItemDetail img {
+
+
+    height: 300px;
+    width: 250px;
+
+
+}
+
+.ItemDetail h2 {
+
+
+    margin-top: 16px;
+
+}
+
+@media screen and (min-width:900px) {
+
+
+    .ItemDetail {
+
+        margin-top: 50px;
+        text-align: center;
+        
+    }
+}

@@ -1,17 +1,30 @@
 import React from "react";
 import { BrowserRouter, Routes,Route } from "react-router-dom";
-import { AllContainer } from "../BigContainer/BigContainer";
 import ItemDetailContainer from "../ItemDetailContainer/ItemDetailContainer";
 import ItemListContainer from '../ItemListContainer/ItemListContainer'
-import ItemDetail from '../ItemDetail/ItemDetail'
-
+import { NavbarFunction } from "../nabvar/navbar";
 const AppRouting = () => {
 
     return <BrowserRouter>
     <Routes>
 
-      <Route path='/' element={<AllContainer/>}/>
-      <Route path='/item/:id' element={<ItemDetailContainer/>}/>
+      <Route path='/' element={<> <NavbarFunction />
+      <ItemListContainer/>
+      </>}/>
+      
+      <Route path='/item/:id' element={
+      <>
+      <NavbarFunction/>
+      <ItemDetailContainer/>
+      </>}/>
+
+      <Route path='/category/:categoryid' element={
+        <>
+        <NavbarFunction/>
+        <ItemListContainer/>
+        </>
+        } />
+
 
     </Routes>
     
