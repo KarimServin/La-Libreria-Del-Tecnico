@@ -18,3 +18,6 @@ Se trata de un e-commerce que vende libros técnicos. La idea se inspira en la f
 - ItemCount: controla la cantidad de stock y los productos que se llevan.
 - ItemDetailContainer: obtiene de la API la lista de productos y mueesta los detalles de un único producto (retorna ItemDetail).
 - ItemDetail: representa un container visual con los detalles completos de un único producto. 
+
+
+![ELGIF]https://github.com/KarimServin/La-Libreria-Del-Tecnico/blob/main/ELGIF.gif
