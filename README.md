@@ -21,3 +21,7 @@ Se trata de un e-commerce que vende libros técnicos. La idea se inspira en la f
 
 
 ![ELGIF](https://github.com/KarimServin/La-Libreria-Del-Tecnico/blob/main/ELGIF.gif)
+
+## Librería Bootstrap for React
+
+Para ciertos componentes se utilizó la librería Bootstrap ya que brinda ciertas facilidades en el manejo de elementos. Por ejemplo en Navbar, permite la implementación de un Toggler sin necesidad de agregarlo en un CSS; así también facilita la implementación de algunos componentes. 
