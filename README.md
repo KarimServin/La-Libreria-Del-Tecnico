@@ -7,7 +7,7 @@ El proyecto surge como iniciativa del curso de React de Coderhouse.
 Se trata de un e-commerce que vende libros técnicos. La idea se inspira en la falta de librerías que trabajen libros técnicos, al menos en el interior del país.
 
 
-##Componentes React
+## Componentes React
 
 - AppRouting: componente fundamental de Routing de la aplicación. Indica las rutas del sitio web.
 - Nabvar: Header de todas las secciones, que comprende 
