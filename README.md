@@ -20,4 +20,4 @@ Se trata de un e-commerce que vende libros técnicos. La idea se inspira en la f
 - ItemDetail: representa un container visual con los detalles completos de un único producto. 
 
 
-![ELGIF]https://github.com/KarimServin/La-Libreria-Del-Tecnico/blob/main/ELGIF.gif
+![ELGIF](https://github.com/KarimServin/La-Libreria-Del-Tecnico/blob/main/ELGIF.gif)
