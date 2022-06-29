@@ -39,7 +39,13 @@ const SendDetails = ({producto}) => {
     
     return (producto.map( p => 
 
-        <ItemDetail key={p.id} id={p.id} title={p.title} price={p.price} pictureUrl={p.pictureUrl} description={p.description}/>
+        <ItemDetail key={p.id} 
+        id={p.id} 
+        title={p.title} 
+        price={p.price} 
+        pictureUrl={p.pictureUrl} 
+        description={p.description}
+        stock={p.stock}/>
 
   ))
 

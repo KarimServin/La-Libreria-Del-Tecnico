@@ -7,9 +7,9 @@ import {Link} from 'react-router-dom'
 
 const Item = (props) => {
 
-    const { id, title, description, price, pictureUrl } = props;
+    const { id, title, description, pictureUrl } = props;
 
-    
+//CARD DE BOOTSTRAP    
     return <Card  style={{ width: '18rem' }}> 
         <Card.Img variant="top" src={pictureUrl} />
         <Card.Body>

@@ -2,7 +2,7 @@ import React from "react";
 import { BrowserRouter, Routes,Route } from "react-router-dom";
 import ItemDetailContainer from "../ItemDetailContainer/ItemDetailContainer";
 import ItemListContainer from '../ItemListContainer/ItemListContainer'
-import { NavbarFunction } from "../nabvar/navbar";
+import { NavbarFunction } from "../nabvar/Navbar";
 const AppRouting = () => {
 
     return <BrowserRouter>

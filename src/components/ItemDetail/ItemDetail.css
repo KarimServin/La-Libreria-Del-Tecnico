@@ -47,8 +47,25 @@
 
     .ItemDetail {
 
+        display: grid;
+        grid-template-columns: repeat(12,1fr);
         margin-top: 50px;
         text-align: center;
         
     }
-}
+
+    .ItemDetail img {
+
+
+        grid-column: 4/6;
+
+
+    } 
+
+    .ItemDetail section {
+
+
+        grid-column: 7/10;
+
+    }
+} 
